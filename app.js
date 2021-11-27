@@ -8,7 +8,7 @@ con.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
 
-    // Get the city table data
+    // Get the city table data v2
     con.query("SELECT * FROM city", function (err, result, fields) {
         if (err) throw err;
         console.log(result);
